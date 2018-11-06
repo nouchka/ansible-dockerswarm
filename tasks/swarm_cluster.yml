@@ -18,6 +18,7 @@
   shell: docker info
   changed_when: False
   register: docker_info
+  check_mode: no
   tags:
     - skip_ansible_lint # Suppressing the linter
 
