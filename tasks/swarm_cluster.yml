@@ -96,6 +96,7 @@
          {{ ansible_hostname }}
   register: docker_swarm_labels
   changed_when: False
+  check_mode: no
   delegate_to: "{{ groups['docker_swarm_manager'][0] }}"
   delegate_facts: True
   tags:
