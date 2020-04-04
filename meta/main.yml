@@ -13,19 +13,16 @@ galaxy_info:
         - 7
     - name: Ubuntu
       versions:
-        - trusty
-        - utopic
-        - vivid
-        - wily
+        - disco
+        - cosmic
+        - bionic
         - xenial
     - name: Debian
       versions:
-        - etch
-        - jessie
+        - buster
+        - stretch
   galaxy_tags:
     - docker
     - swarm
-    - docker-swarm
-    - docker-cluster
 
 dependencies: []
