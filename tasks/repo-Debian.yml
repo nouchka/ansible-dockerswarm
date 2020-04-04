@@ -23,7 +23,7 @@
   apt:
     name:
       - apt-transport-https
-      - gpg
+      - gnupg
     state: present
 
 - name: Import Docker APT public key.
