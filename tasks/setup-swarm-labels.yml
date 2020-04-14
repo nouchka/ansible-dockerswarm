@@ -18,6 +18,7 @@
   when: item not in swarm_labels
   delegate_to: "{{ groups['docker_swarm_manager'][0] }}"
   delegate_facts: true
+  check_mode: no
   tags:
     - swarm_labels
 
@@ -28,5 +29,6 @@
     - "{{ swarm_labels  | default([]) }}"
   delegate_to: "{{ groups['docker_swarm_manager'][0] }}"
   delegate_facts: true
+  check_mode: no
   tags:
     - swarm_labels
